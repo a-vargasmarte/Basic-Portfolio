@@ -11,47 +11,65 @@
 
 	<!-- Main Header -->
 	<header>
-		<h1>Alberto Vargas</h1>
-		<hr>	
+		<div class="topnav">
+			
+			<div>
+				<h1 id="yourname">Alberto Vargas</h1>
+			</div>
+
+			<div>
+				<a class="navlink" id="about" href="#about-link">About </a>
+			</div>
+			
+			<div>
+				<a class="navlink" id="portfolio" href="#portfolio-link">Portfolio </a>
+			</div>
+
+			<div>
+				<a class="navlink" id="contact" href="#contact-link">Contact </a>
+			</div>
+
+		</div>
 	</header>				
 	
 	<!-- Section 1: -->	
 	<div class="container">
-		<section id="contact-form">
+		<section id="contact-content">
 			<h2 id="aboutme">Contact</h2>
 
-			<hr>
+			<hr id="content-hr">
 			
 			<form action="/action_page.php">
 			
 				<label for="fullname">Name</label>
-				<input type="text" id="name" name="fullname" placeholder="John Smith">
+				<input class="field" type="text" id="name" name="fullname" placeholder="John Smith">
 
 				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="example@gmail.com">
+				<input class="field" type="text" id="email" name="email" placeholder="example@gmail.com">
 
 				<label for="message">Message</label>
-				<input type="text" id="message" name="message">
+				<textarea class="field" id="msg" name="message" placeholder="Write Something..."></textarea>
 
-				<input type="submit" value="Submit">	
+				<input id="submit" type="submit" value="Submit">	
 
 			</form>
 		</section>
 	
-	<!-- Section 2: -->
-		<section id="sidebar">
+<!-- Section 2: Side bar -->
+		<aside id="sidebar">
 			<h3>Connect with me</h3>
 
-			<hr>
+			<hr id="side-hr">
 	
 	<!-- Place images from different social media accounts -->
-			<a href="#"><img class="socialmediapic" src="assets/images/github.png" alt="Picture of github logo"></a>
+			<a href="https://a-vargasmarte.github.io/" target="_blank"><img class="socialmediapic" src="assets/images/github.png" alt="Picture of github logo"></a>
 
-			<a href=""><img class="socialmediapic" src="assets/images/linkedin.png" alt="Photo of Linkedin logo"></a>
+			<a href="https://www.linkedin.com/in/alberto-vargas-117717112/" target="_blank"><img class="socialmediapic" src="assets/images/linkedin.png" alt="Photo of Linkedin logo"></a>
 			
-			<a href=""><img class="socialmediapic" src="assets/images/angellist.png" alt="Photo of Angel List logo"></a>
+			<a href="https://angel.co/alberto-vargas-2" target="_blank"><img class="socialmediapic" src="assets/images/angellist.png" alt="Photo of Angel List logo"></a>
 
-		</section>
+		</aside>
+
 	</div>
 </body>
 </html>
