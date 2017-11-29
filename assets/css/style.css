@@ -11,42 +11,6 @@ body {
 	padding: 0;
 }
 
-/*Common styling
-Header, container, sidebar, footer, h2, h3*/
-
-header {
-	width: 100%;
-	border-bottom-style: solid;
-	background: #ffffff;
-}
-
-.container {
-	clear: both;
-	width: 960px;
-	margin: 0 auto;
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-#sidebar {
-	position: absolute;
-	right: 20px;
-	width: 270px;
-	height: 150px;
-	background: #ffffff;
-	text-align: center;
-}
-
-footer {
-	position: fixed;
-	width: 100%;
-	background: #666666;
-	bottom: 0;
-	padding: 0;
-	border-top: solid #4aaaa5 6px;	
-}
-
 h2 {
 	color: #4aaaa5;
 	margin-left: 40px;
@@ -56,42 +20,15 @@ h3 {
 	color: #4aaaa5;	
 }
 
-.portfolio-pic {
-	position: relative;
-	float: left;
-	border: solid black 2px;
-}
-
-.place-div {
-	position: relative;
-	float: left;
-	margin-left: 80px;
-}
-
-.row1-place {
-	float: left;
-	margin-top: 40px;
-}
-
-.row2-place {
-	margin-top: 40px;
-}
-
-.row3-place {
-	margin-top: 40px;
-}
+/*Common styling*/
 
 
-/*Placeholder headings*/
-.portfolio-label {
-	position: absolute;
-	background: #4aaaa5;
-	color: #ffffff;
-	width: 200px;
-	top: 120px;
-	padding: 10px;
-	margin-left: 2px;
-	text-align: center;
+/* Header */
+
+header {
+	width: 100%;
+	border-bottom-style: solid;
+	background: #ffffff;
 }
 
 .navlink {
@@ -106,10 +43,78 @@ h3 {
 .navlink:hover {
 	background:#e8ebef;
 }
+/* --------------------------------------------------- */
+
+
+/* Main Section */
+
+.container {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.main {
+	position: relative;
+	width: 650px;
+	float: left;
+	background: #ffffff;
+	border: 1px solid #ccc;
+}
+
+
+.sidebar {
+	position: absolute;
+	right: 20px;
+	width: 270px;
+	height: 150px;
+	background: #ffffff;
+	text-align: center;
+}
 
 .socialmediapic {
 	width: 50px;
 	height: 50px;
+}
+
+.place-div {
+	position: relative;
+	float: left;
+	margin-left: 80px;
+}
+
+.pic {
+	position: relative;
+	float: left;
+	border: solid black 2px;
+}
+
+.row1-pic {
+	float: left;
+	margin-top: 40px;
+}
+
+.row2-pic {
+	margin-top: 40px;
+}
+
+.row3-pic {
+	margin-top: 40px;
+}
+
+/*Placeholder headings*/
+.piclab {
+	position: absolute;
+	background: #4aaaa5;
+	color: #ffffff;
+	width: 200px;
+	top: 120px;
+	padding: 10px;
+	margin-left: 2px;
+	text-align: center;
 }
 
 /* Contact form */
@@ -121,8 +126,7 @@ form {
 	height: 80%;
 }
 
-
-label {
+.lab {
 	float: left;
 	width: 100%;
 	margin-top: 5px;
@@ -133,11 +137,25 @@ input[type=text], textarea {
 	margin-top: 6px;
 }
 
+/* --------------------------------------------------- */
+
+/* Footer */
+
+.foot {
+	position: fixed;
+	width: 100%;
+	background: #666666;
+	bottom: 0;
+	padding: 0;
+	border-top: solid #4aaaa5 6px;	
+}
 
 
 /* --------------------------------------------------- */
 
 /* Unique styling */
+
+/* Header */
 
 #yourname {
 	background: #4aaaa5;
@@ -160,30 +178,22 @@ input[type=text], textarea {
 	left: 890px;
 }
 
+/* --------------------------------------------------- */
+
+/* Main Section */
+
 #main-content {
-	width: 650px;
 	height: 450px;
-	float: left;
-	background: #ffffff;
-	border: 1px solid #ccc;
 }
 
 #main-portfolio {
-	width: 650px;
 	height: 900px;
-	float: left;
 	margin-bottom: 20px;
-	background: #ffffff;
-	border: 1px solid #ccc;
 }
 
-#contact-content {
-	position: relative;
-	width: 650px;
+#main-contact {
 	height: 420px;
 	float: left;
-	background: #ffffff;
-	border: 1px solid #ccc; 
 }
 
 #content-hr {
@@ -200,11 +210,6 @@ p {
 	font-size: 15px;
 }
 
-#copyright {
-	color: #ffffff;
-	text-align: center;
-}
-
 /*Images*/
 
 #bio-image {
@@ -212,15 +217,15 @@ p {
 	width: 300px;
 	height: 169px;
 	border: black solid 2px;
-	margin-left: 10px;
-	margin-right: 5px; 
+	margin:0px 5px; 
 }
+
+/* Contact Form */
 
 textarea {
 	height: 40%;
 }
 
-/* buttons */
 #submit {
 	background: #4aaaa5;
 	color: #ffffff;
@@ -234,4 +239,13 @@ textarea {
 
 #submit:hover {
 	background: #418e8a;
+}
+
+/* --------------------------------------------------- */
+
+/* Footer */
+
+#copyright {
+	color: #ffffff;
+	text-align: center;
 }
